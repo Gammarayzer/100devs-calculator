@@ -1,0 +1,46 @@
+body{
+    font-family: 'Press Start 2P', cursive;
+   width: 100%;
+   
+  
+    
+}
+
+main {
+   
+    width: 75%;
+    border: 2px solid black;
+    background-color: black;
+   
+}
+
+.mainDisplay {
+    font-family: 'Press Start 2P', cursive;
+    
+  
+    background-color: white;
+  padding: 5px;
+    margin: 5px;
+    font-size: 40px;
+   
+}
+
+section {
+    width: 100%;
+    text-align: center;
+
+    
+
+}
+
+button{
+    font-family: 'Press Start 2P', cursive;
+
+    width: 100px;
+    margin: 5px;
+    height:100px;
+    background-color: white;
+    font-size : 40px;
+   
+}
+
