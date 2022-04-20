@@ -10,6 +10,7 @@
 let displayValue = '0'
 let equalsTo = 0
 
+
 // make they keys work
 document.querySelector(".clear").addEventListener('click', () => {
     displayValue = '0'
@@ -102,5 +103,4 @@ document.querySelector('.mainDisplay').innerHTML = displayValue
 document.querySelector(".equals").addEventListener('click', () => {    (displayValue ==='0') ?
 displayValue = 'no values': equalsTo = eval(displayValue)
 document.querySelector('.totalDisplay').innerHTML = equalsTo
-})
 
