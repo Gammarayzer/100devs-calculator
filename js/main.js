@@ -88,6 +88,14 @@ document.querySelector(".sub").addEventListener('click', () => {    (displayValu
 displayValue = '-': displayValue += '-'
 document.querySelector('.mainDisplay').innerHTML = displayValue
 })
+document.querySelector(".bracketLeft").addEventListener('click', () => {    (displayValue ==='0') ?
+displayValue = '(': displayValue += '('
+document.querySelector('.mainDisplay').innerHTML = displayValue
+})
+document.querySelector(".bracketRight").addEventListener('click', () => {    (displayValue ==='0') ?
+displayValue = ')': displayValue += ')'
+document.querySelector('.mainDisplay').innerHTML = displayValue
+})
 
 // now to make the equals do magical things
 
