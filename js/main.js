@@ -7,7 +7,6 @@
 // then final equals
 
 
-<<<<<<< HEAD
 // keypad selectors
 // Object Oriented Programming... adjust your code ray.
 
@@ -20,9 +19,6 @@ const calculator = {
 console.log("message for the user:")
 console.log("the top is your 'display window' and below it is your 'total window'. you can create as long of a string of numbers and operators as you would like, this calculator will do the math for you in a snap! it will follow PEMDAS order of operations but don't use operators back to back... you will only recieved an error (if you are watching the console that is). use the '<x' button to clear your 'main display' and get you back on track! The 'C' button clears everything from memory. with great power comes great responsiblity so use your powers wisely. ")
 console.log("-signed your friendly neighbourhood programmer :)")
-=======
-
->>>>>>> 59f123d761863af66d4047856d095aa898cf85e9
 // make they keys work
 document.querySelector(".clear").addEventListener('click', () => {
     calculator.displayValue = '0'
@@ -119,7 +115,6 @@ document.querySelector('.mainDisplay').innerHTML = calculator.displayValue
 
 // now to make the equals do magical things
 
-<<<<<<< HEAD
 document.querySelector(".equals").addEventListener('click', () => {   
     if (calculator.equalsTo == eval(calculator.displayValue))
         {   calculator.displayValue = calculator.equalsTo
@@ -135,9 +130,4 @@ document.querySelector(".equals").addEventListener('click', () => {
     
 
 })
-=======
-document.querySelector(".equals").addEventListener('click', () => {    (displayValue ==='0') ?
-displayValue = 'no values': equalsTo = eval(displayValue)
-document.querySelector('.totalDisplay').innerHTML = equalsTo
->>>>>>> 59f123d761863af66d4047856d095aa898cf85e9
 
