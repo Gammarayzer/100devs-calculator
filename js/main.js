@@ -81,35 +81,50 @@ calculator.displayValue = '0': calculator.displayValue += '0'
 document.querySelector('.mainDisplay').innerHTML = calculator.displayValue
 })
 
-document.querySelector(".deci").addEventListener('click', () => {    (calculator.displayValue ==='0') ?
-calculator.displayValue = '.': calculator.displayValue += '.'
+document.querySelector(".deci").addEventListener('click', () =>{  
+
+ repeatedOperator('.')
+  
+    
 document.querySelector('.mainDisplay').innerHTML = calculator.displayValue
 })
 
 //now the operators 
 
-document.querySelector(".divi").addEventListener('click', () => {    (calculator.displayValue ==='0') ?
-calculator.displayValue = '/': calculator.displayValue += '/'
+document.querySelector(".divi").addEventListener('click', () => {    
+    mainDisplayZero('/')
+    repeatedOperator('/')
 document.querySelector('.mainDisplay').innerHTML = calculator.displayValue
 })
+
 document.querySelector(".multi").addEventListener('click', () => {    (calculator.displayValue ==='0') ?
-calculator.displayValue = '*': calculator.displayValue += '*'
+calculator.displayValue = '0': calculator.displayValue += '*'
+    mainDisplayZero('*') 
+    repeatedOperator('*')
 document.querySelector('.mainDisplay').innerHTML = calculator.displayValue
 })
-document.querySelector(".add").addEventListener('click', () => {    (calculator.displayValue ==='0') ?
-calculator.displayValue = '+': calculator.displayValue += '+'
+
+document.querySelector(".add").addEventListener('click', () => {
+    mainDisplayZero('+')  
+    repeatedOperator('+')
 document.querySelector('.mainDisplay').innerHTML = calculator.displayValue
 })
-document.querySelector(".sub").addEventListener('click', () => {    (calculator.displayValue ==='0') ?
-calculator.displayValue = '-': calculator.displayValue += '-'
+
+document.querySelector(".sub").addEventListener('click', () => {    
+    mainDisplayZero('-')    
+    repeatedOperator('-')
 document.querySelector('.mainDisplay').innerHTML = calculator.displayValue
 })
+
 document.querySelector(".bracketLeft").addEventListener('click', () => {    (calculator.displayValue ==='0') ?
 calculator.displayValue = '(': calculator.displayValue += '('
+
+    repeatedOperator("(")
 document.querySelector('.mainDisplay').innerHTML = calculator.displayValue
 })
-document.querySelector(".bracketRight").addEventListener('click', () => {    (calculator.displayValue ==='0') ?
-calculator.displayValue = ')': calculator.displayValue += ')'
+
+document.querySelector(".bracketRight").addEventListener('click', () => {    mainDisplayZero(')')
+    repeatedOperator(")")
 document.querySelector('.mainDisplay').innerHTML = calculator.displayValue
 })
 
@@ -131,3 +146,23 @@ document.querySelector(".equals").addEventListener('click', () => {
 
 })
 
+
+function mainDisplayZero(str) {
+    (calculator.displayValue ==='0') ?
+    calculator.displayValue = '0': calculator.displayValue += str
+    }
+   
+    
+
+function repeatedOperator(oper) {
+    let dispEndVal = calculator.displayValue[calculator.displayValue.length -2]
+
+    if (dispEndVal === oper)
+     { return calculator.displayValue = calculator.displayValue.slice(0,-1)
+    } else { return 
+    }
+
+    } 
+
+    // there is an issue of repeat decimals and repeat operators. I will like to solve this problem but might just shift to a simpler system that doesnt have these string issues.
+    
