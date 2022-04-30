@@ -1,94 +1,75 @@
-body{
-    
-   width: 100%; 
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   
-  
-    
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
 }
 
-* {font-family: 'Press Start 2P', cursive;
-    
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.calculator {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    padding-top: 75px;
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 25px;
 
 }
 
-main {
-    width: 300px;
-    
-   
-    
-    border-radius: 50px;
-    text-align: center;
-    padding: 20px;
-    border-bottom: 5px solid darkred;
-    border-right: 5px solid darkred;
-    
-    background: linear-gradient(127deg, red, black);
-    box-shadow: 5px 5px 10px black;
-}
-
-.mainDisplay  {
-  
+.calculator-screen {
+    width: 100%;
+    font-size: 5rem;
+    height: 80px;
+    border: none;
     background-color: white;
-  padding: 5px;
-    margin: 5px;
-    word-wrap: break-word;
-    border-top: 5px solid black;
-    border-left: 5px solid black;
-    border-bottom: 5px solid gray;
-    border-right: 5px solid gray;
-   
-   
-   
+    color: black;
+    text-align: right;
+    padding-right: 10px;
+    /* border: 2px solid green */
+    ;
+
 }
-.totalDisplay {
-    font-family: 'Press Start 2P', cursive;
-    background-color: darkslategray;
-    color: white;
-  padding: 5px;
-    margin: 5px;
-    word-wrap: break-word;
-    border-top: 5px solid black;
-    border-left: 5px solid black;
-    border-bottom: 5px solid gray;
-    border-right: 5px solid gray;
-   
-   
-   
+.calculator-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+    padding-bottom: 5px;
+    /* border: 2px solid yellow; */
+    
+}
+ 
+button {
+    height: 60px;
+    background-color: white;
+    color:black;
+    border: none;
+    border-radius: 30px;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 7px;
+    padding: 5px;
+    flex: 1 0 18%;
+
 }
 
+.all-clear {
+    background-color: red;
+    color: white;
+    font-size: 3rem;
+
+}
 
 button:hover {
     background-color: black;
     color: white;
-    border: 3px solid transparent;
-    box-shadow: 0px 0px 0px black;
-
+    
 }
-
-
-button{
-    font-family: 'Press Start 2P', cursive;
-
-  
-    margin: 5px;
-   padding: 10px;
-    background-color: white;
-    font-size : 20px;
-    border-radius: 50px;
-    border: 3px solid black;
-    box-shadow: 5px 5px 10px black;
-    /* border-bottom: 3px solid darkred;
-    border-right: 3px solid darkred;
-    border-top: 3px solid gray;
-    border-left: 3px solid gray; */
-   
-}
-/* :hover button {
-    background-color: grey;
-} */
-
- 
 

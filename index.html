@@ -6,48 +6,46 @@
     <meta name="viewport" content="width initial-scale=1.0">
     <title>calculator</title>
     
-		<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Press+Start+2P&family=Roboto+Slab&display=swap" rel="stylesheet">
+       
     
 
 </head>
 <body>
- 
-    <main>
-        <section> <h1 class="mainDisplay" >0</h1></section>
-        <section> <h1 class="totalDisplay" >0</h1></section>
-        <section>
-            <button class="bracketLeft">(</button>
-            <button class="bracketRight">)</button>
-            <button class="clear">C</button>
-            <button class="back">⌫</button>
-            
+<section class="calculator">
+<input type="text" class="calculator-screen" value="0" disabled/>
+<section class="calculator-buttons">
+    
+   
+    
+
+    <button type="button" value="7">7</button>
+    <button type="button" value="8">8</button>
+    <button type="button" value="9">9</button>
+    <button type="button" value="/">&divide;</button>
+  
+    <button type="button" value="4">4</button>
+    <button type="button" value="5">5</button>
+    <button type="button" value="6">6</button>
+    <button type="button" value="*">&times;</button>
+
+    <button type="button" value="1">1</button>
+    <button type="button" value="2">2</button>
+    <button type="button" value="3">3</button>
+    <button type="button" value="+">&plus;</button>
+
+    <button type="button" class="all-clear" value="BK">BK</button>
+    <button type="button" value="0">0</button>
+    <button type="button" value=".">.</button>
+    <button type="button" value="-">&minus;</button>
+    <button type="button" class="all-clear" value="AC">AC</button>
+  
+    <button type="button" value="=">=</button>
+
         </section>
-        <section>
-            <button class="one" value="1">1</button>
-            <button class="two">2</button>
-            <button class="three">3</button>
-            <button class="divi">/</button>
-        </section>
-        <section>
-            <button class="four">4</button>
-            <button class="five">5</button>
-            <button class="six">6</button>
-            <button class="multi">*</button>
-        </section><section>
-            <button class="seven">7</button>
-            <button class="eight">8</button>
-            <button class="nine">9</button>
-            <button class="add">+</button>
-        </section><section>
-            <button class="zero">0</button>
-            <button class="deci">.</button>
-            <button class="equals">=</button>
-            <button class="sub">-</button>
-        </section>
-       
-    </main>
+    </section>
+  
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
